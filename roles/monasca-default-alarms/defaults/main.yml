@@ -4,4 +4,4 @@
 notification_address: root@localhost
 notification_name: 'Default Email'
 notification_type: EMAIL
-keystone_project:
+keystone_project: mini-mon

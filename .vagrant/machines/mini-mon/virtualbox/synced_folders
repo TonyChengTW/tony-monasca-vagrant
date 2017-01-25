@@ -1,1 +1,0 @@
-{"virtualbox":{"/vagrant_home":{"guestpath":"/vagrant_home","hostpath":"/home/jenkins","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/jenkins/monasca-vagrant","disabled":false,"__vagrantfile":true}}}

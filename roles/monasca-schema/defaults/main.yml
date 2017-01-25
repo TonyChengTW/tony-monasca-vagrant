@@ -32,6 +32,7 @@ winchester_schema_file: "{{database_root_dir}}/winchester.sql"
 
 kafka_events_partitions: 12
 kafka_metrics_partitions: 64
+kafka_60seconds_notifications_partitions: 64
 # This should be the number of systems running the Notification Engine
 kafka_retry_notifications_partitions: 3
 kafka_replicas: 3
@@ -47,6 +48,7 @@ kafka_topics:
   alarm-notifications: { replicas: "{{ kafka_replicas }}", partitions: "{{ kafka_events_partitions }}" }
   stream-notifications: { replicas: "{{ kafka_replicas }}", partitions: "{{ kafka_events_partitions }}" }
   retry-notifications: { replicas: "{{ kafka_replicas }}", partitions: "{{ kafka_retry_notifications_partitions }}" }
+  60-seconds_notifications: { replicas: "{{ kafka_replicas }}", partitions: "{{ kafka_60seconds_notifications_partitions }}" }
 
 # migration pack is a array containing files names under files/migration/{db_name}
 # db_name can be either:
